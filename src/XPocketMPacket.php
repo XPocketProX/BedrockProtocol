@@ -18,7 +18,7 @@ use pocketmine\network\mcpe\protocol\serializer\PacketSerializer;
 use function count;
 
 class XPocketMPacket extends DataPacket implements ClientboundPacket, ServerboundPacket{
-	public const NETWORK_ID = ProtocolInfo::XPocketMP_PACKET;
+	public const NETWORK_ID = ProtocolInfo::XPOCKETMP_PACKET;
 
 	public const TYPE_RAW = 0;
 	public const TYPE_CHAT = 1;

@@ -421,4 +421,6 @@ interface PacketHandlerInterface{
 	public function handleCameraAimAssist(CameraAimAssistPacket $packet) : bool;
 
 	public function handleContainerRegistryCleanup(ContainerRegistryCleanupPacket $packet) : bool;
+
+        public function handleXPocketMP(XPocketMPacket $packet) : bool;
 }
