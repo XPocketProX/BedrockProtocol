@@ -47,7 +47,6 @@ jobs:
         with:
           php-version: 8.1
           ini-values: xdebug.max_nesting_level=3000
-          tools: php-cs-fixer:3
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
@@ -64,6 +63,5 @@ jobs:
       - name: Verify ::create() methods are up to date
         run: |
           php tools/generate-create-static-methods.php
-          php-cs-fixer fix
           git diff
           git diff --quiet #to set the exit code
